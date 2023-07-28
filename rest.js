@@ -110,7 +110,7 @@ function displayCountriesRegion(countries) {
       </div>
             `;
       countryElement.addEventListener("click", () => {
-        window.location.href = `countrydetails.html?name=${encodeURIComponent(
+        window.location.href = `/countrydetails.html?name=${encodeURIComponent(
           country.name
         )}`;
       });
