@@ -31,7 +31,7 @@ const displaySearchResult = (results) => {
     </div>
             `;
       countryElement.addEventListener("click", () => {
-        window.location.href = `/countrydetails.html?name=${encodeURIComponent(
+        window.location.href = `/Rest-Country-Api/countrydetails.html?name=${encodeURIComponent(
           country.name
         )}`;
       });
@@ -45,7 +45,7 @@ const displaySearchResult = (results) => {
 };
 //
 function redirectCountryPage(countryName) {
-  const countryPage = `countrydetails.html?name=${encodeURIComponent(
+  const countryPage = `/Rest-Country-Api/countrydetails.html?name=${encodeURIComponent(
     countryName
   )}`;
   window.location.href = countryPage;
@@ -110,7 +110,7 @@ function displayCountriesRegion(countries) {
       </div>
             `;
       countryElement.addEventListener("click", () => {
-        window.location.href = `/countrydetails.html?name=${encodeURIComponent(
+        window.location.href = `/Rest-Country-Api/countrydetails.html?name=${encodeURIComponent(
           country.name
         )}`;
       });
